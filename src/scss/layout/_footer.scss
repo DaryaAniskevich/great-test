@@ -1,0 +1,13 @@
+.footer {
+  background-color: $footer-gray;
+  &-container {
+    padding: 50px 0 40px;
+    @include screen-max(700) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  &__text {
+    color: $white;
+  }
+}

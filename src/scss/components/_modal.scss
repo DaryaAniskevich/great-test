@@ -1,0 +1,41 @@
+.modal {
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(26, 26, 37, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+  z-index: 100;
+  &_active {
+    opacity: 1;
+    pointer-events: all;
+  }
+  &-content {
+    margin-top: 150px;
+    max-width: 600px;
+    width: 100%;
+    background-color: $white;
+    box-shadow: 0px 10px 30px rgba(133, 143, 164, 0.1);
+    border-radius: 6px;
+    padding: 18px 45px 47px;
+    @include screen-max(450) {
+      margin-top: 0;
+      border-radius: 0;
+      height: 100vh;
+    }
+  }
+  &__button {
+    margin-bottom: 6px;
+    color: $text-gray;
+    text-align: right;
+    cursor: pointer;
+    &:hover {
+      color: $black;
+    }
+  }
+}

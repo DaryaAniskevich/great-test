@@ -1,0 +1,44 @@
+.slider-block {
+  &-container {
+    padding: 20px 0 40px;
+    text-align: center;
+  }
+  &__heading {
+    margin-bottom: 4px;
+  }
+  &-wrapper {
+    padding: 16px 0;
+    margin-bottom: 4px;
+  }
+  &-slider {
+    &-item {
+      background-color: $white;
+      box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.17);
+      width: 707px;
+      height: 303px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include screen-max(700) {
+        width: 507px;
+        height: 219px;
+      }
+      @include screen-max(450) {
+        width: 304px;
+        height: 131px;
+      }
+      &__img {
+        width: 697px;
+        height: 293px;
+        @include screen-max(700) {
+          width: 497px;
+          height: 209px;
+        }
+        @include screen-max(450) {
+          width: 300px;
+          height: 126px;
+        }
+      }
+    }
+  }
+}

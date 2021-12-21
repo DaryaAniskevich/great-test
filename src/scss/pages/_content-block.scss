@@ -1,0 +1,16 @@
+.content-block {
+  &-container {
+    padding: 20px 0 40px;
+    @include screen-max(700) {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+  }
+  &__heading {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  &__content {
+    font-size: 14px;
+  }
+}

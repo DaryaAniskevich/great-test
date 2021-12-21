@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Myriad Pro", sans-serif;
+  color: $black;
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+input[type="text"],
+input[type="phone"],
+input[type="email"],
+textarea {
+  appearance: none;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 980px;
+  width: 100%;
+  margin: 0 auto;
+}
